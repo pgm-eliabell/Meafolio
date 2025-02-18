@@ -2,17 +2,30 @@
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
   <TestTemplate/>
+  <Navbar/>
+  <Hero title="Welcome to my Portfolio" description="This is a description of my portfolio"/>
+  <About/>
+  <Hero title="Projects" description="Here are some of my projects"/>
+  <Hero title="Contact" description="Contact me here"/>
+  
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import TestTemplate from './components/TestTemplate.vue'
+import Navbar from './components/Navbar.vue'
+import About from './components/AboutPage.vue'
+import Hero from './components/portfolioComponents/HeroSection.vue'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    TestTemplate
+    TestTemplate,
+    Navbar, 
+    Hero,
+    About
+
   }
 }
 </script>
