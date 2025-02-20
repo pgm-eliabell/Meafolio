@@ -15,6 +15,9 @@
   </script>
   
   <style scoped>
+  li {
+    color: white;
+  }
   nav {
     background-color: #333;
     padding: 1rem;

@@ -7,7 +7,7 @@ import ContactPage from './components/ContactPage.vue';
 const routes = [
   { path: '/', component: HomePage },
   { path: '/about', component: AboutPage },
-  { path: '/contact', component: Contact },
+  { path: '/contact', component: ContactPage },
 ];
 
 const router = createRouter({

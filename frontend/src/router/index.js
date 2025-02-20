@@ -5,13 +5,13 @@ import AboutPage from './components/AboutPage.vue';
 import ContactPage from './components/ContactPage.vue';
 
 const routes = [
-  { path: '/', component: HomePage },
-  { path: '/about', component: AboutPage },
-  { path: '/contact', component: ContactPage },
+  { path: '/', name: 'Home',  component: HomePage },
+  { path: '/about', name: 'About', component: AboutPage },
+  { path: '/contact', name: 'Contact', component: ContactPage },
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(process.env.BASE_URL),
   routes,
 });
 
