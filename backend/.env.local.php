@@ -6,5 +6,5 @@ return array (
   'APP_ENV' => 'prod',
   'SYMFONY_DOTENV_PATH' => './.env',
   'APP_SECRET' => 'thiscanbewhatyouwant',
-  'DATABASE_URL' => 'mysql://db:db@127.0.0.1:53624/db?serverVersion=10.5.9-MariaDB&charset=utf8mb4',
+  'DATABASE_URL' => (getenv('DATABASE_URL')),
 );
